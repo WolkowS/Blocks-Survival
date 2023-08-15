@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1606637378395258821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a18803ac4df04cd5ab25fc06d8f6a48d, type: 3}
+  m_Name: Fade
+  m_EditorClassIdentifier: 
+  m_Prefab: {fileID: 605826523853862601, guid: 5bf8c6f9a87138d4a851883b55c76025, type: 3}
+--- !u!114 &-389492784458920256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b10acd401d84928af576cc5f7c3131b, type: 3}
+  m_Name: Main
+  m_EditorClassIdentifier: 
+  m_SceneName: Main
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd1b167500d4b94b4721920b4cb3bf5, type: 3}
+  m_Name: SceneManager
+  m_EditorClassIdentifier: 
+  m_SceneArgsLifetime:
+    enabled: 0
+    value: 0
+  m_Scenes:
+    m_List:
+    - {fileID: -389492784458920256}
+  m_Transitions:
+    m_List:
+    - {fileID: -1606637378395258821}

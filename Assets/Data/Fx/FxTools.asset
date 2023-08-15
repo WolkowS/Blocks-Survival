@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2612d2b389d24258a917587e284f20a5, type: 3}
+  m_Name: FxTools
+  m_EditorClassIdentifier: 
+  m_FadeColor: {r: 0, g: 0, b: 0, a: 1}
+  m_FadeIn:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_FadeOut:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_FadeState: {fileID: 0}
+  m_FlashColor: {r: 1, g: 1, b: 1, a: 1}
+  m_Flash:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.2
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_ImpulseForce: 0.2
+  m_ShakeNoise: {fileID: 11400000, guid: 0a03a805a46780c4ebd1901d97c59e6e, type: 2}
+  m_Circle: {fileID: -2413806693520163455, guid: 84003f3406a0266479e49c912e793fb2, type: 3}
+  m_Square: {fileID: 7482667652216324306, guid: 8d311f45abea3954587ba2d81d3c147c, type: 3}
+  _coin: {fileID: 8300000, guid: 7680bb2a0498a634793b49cde15dea95, type: 3}
+  _gem: {fileID: 8300000, guid: f7c46c39cf341bb4182e01fd034a5d0f, type: 3}
+  _kill: {fileID: 8300000, guid: d4fe20c63dd287e4db020adc4658635d, type: 3}
+  _hit: {fileID: 8300000, guid: 247d8a3b554d4844cba2f48e24bc7fda, type: 3}
+  _up: {fileID: 8300000, guid: 742b4d5b9913f21408d9e1b4acd474dd, type: 3}
+  _shoot: {fileID: 8300000, guid: 9cabf7f7aa1b9fd42adc3bcf644dcd00, type: 3}
+  _fail: {fileID: 8300000, guid: d532f98f56ef63541862a7c0fa3be33b, type: 3}

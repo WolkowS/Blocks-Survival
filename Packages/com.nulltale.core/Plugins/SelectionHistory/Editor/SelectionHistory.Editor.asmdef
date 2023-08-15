@@ -1,0 +1,18 @@
+{
+    "name": "sc.utilities.selectionhistory.editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:6b2e70c72e88670468dbe0b670f1babd"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

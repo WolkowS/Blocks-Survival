@@ -1,0 +1,16 @@
+{
+    "name": "MarkdownViewer",
+    "rootNamespace": "",
+    "references": [
+        "GUID:fddee5853ba6d214eb729d15e11b2833"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
