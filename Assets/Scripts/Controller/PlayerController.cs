@@ -24,12 +24,13 @@ namespace TarodevController
         public  Vector3    RawMovement      { get; private set; }
         public  bool       Grounded         => _colDown;
         public  Vector2    Move             { get; set; }
+        public  bool       CanJumpAny         { get; set; }
         private bool       _jumpPrev;
         private bool       _jump;
         private bool       _climbLeft;
         private bool       _climbRight;
         private bool       _dash;
-        
+
         public bool Dash
         {
             set { _dash = value; }
@@ -96,6 +97,7 @@ namespace TarodevController
         private float _dashDuration = 0.7f;
         private float _dashTime;
         public float  _dashBounce;
+        public float  _dashCooldown;
         private Vector2 _dashDir;
         private bool _dashPrev;
         
@@ -187,10 +189,12 @@ namespace TarodevController
                     // disallow dash when dashing
                     _dashTime = Time.time;
                     _dashDir  = Move.ToDirectionBox().ToVector2();
+                    if (_dashDir == Vector2.zero)
+                        _dashDir = Vector2.down;
                 }
             }
             
-            Input = new FrameInput { JumpDown = _jumpPrev == false && _jump == true, JumpUp = _jumpPrev == true && _jump == false, X = Move.x, Dash = (Time.time - _dashTime) <= _dashDuration};
+            Input = new FrameInput { JumpDown = _jumpPrev == false && _jump == true, JumpUp = _jumpPrev == true && _jump == false, X = Move.x, Dash = (Time.time - (_dashTime + _dashCooldown)) <= _dashDuration};
             
             _jumpPrev = _jump;
             if (Input.JumpDown)
@@ -278,10 +282,6 @@ namespace TarodevController
             var move = new Vector3(_currentHorizontalSpeed, _currentVerticalSpeed) * Time.deltaTime;
             Gizmos.DrawWireCube(transform.position + _characterBounds.center + move, _characterBounds.size);
         }
-
-        private void _calculateDash()
-        {
-        }
         
         private void _calculateWalk()
         {
@@ -347,7 +347,7 @@ namespace TarodevController
         private void _calculateJump()
         {
             // Jump if: grounded or within coyote threshold || sufficient jump buffer
-            if (Input.JumpDown && CanUseCoyote || HasBufferedJump)
+            if (Input.JumpDown && CanUseCoyote || HasBufferedJump || (Input.JumpDown && CanJumpAny))
             {
                 _currentVerticalSpeed = _jumpHeight;
                 _endedJumpEarly       = false;

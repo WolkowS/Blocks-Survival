@@ -1396,7 +1396,95 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveDir: {fileID: 6256376826479216210}
   _motor:
-    _speed: 3
+    _speedRoll:
+      m_Mode: 0
+      m_CurveMultiplier: 1
+      m_CurveMin:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 9.757896
+          outSlope: 9.757896
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.121585
+          value: 2.1864138
+          inSlope: 1.7224243
+          outSlope: 1.7224243
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.069431774
+        - serializedVersion: 3
+          time: 0.75400573
+          value: 2.2034059
+          inSlope: 0.7829939
+          outSlope: 0.7829939
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.17247039
+        - serializedVersion: 3
+          time: 0.99988306
+          value: 5.0309386
+          inSlope: 11.49977
+          outSlope: 11.49977
+          tangentMode: 34
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_CurveMax:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0.0013087325
+          value: 1.7656103
+          inSlope: 2.2425063
+          outSlope: 2.2425063
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0.13361117
+        - serializedVersion: 3
+          time: 0.12974313
+          value: 5.2179995
+          inSlope: 0.722545
+          outSlope: 0.722545
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.07540818
+        - serializedVersion: 3
+          time: 0.7583714
+          value: 5.1400714
+          inSlope: 0.011148166
+          outSlope: 0.011148166
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.07758469
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 1
+          value: 15.120904
+          inSlope: 71.05332
+          outSlope: 71.05332
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.055185482
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_ConstantMin: 0
+      m_ConstantMax: 5
     _acceleration:
       serializedVersion: 2
       m_Curve:

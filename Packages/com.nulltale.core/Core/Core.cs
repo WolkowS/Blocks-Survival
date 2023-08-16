@@ -6,8 +6,6 @@ using CoreLib.Scripting;
 using Malee;
 using UnityEngine;
 using NaughtyAttributes;
-using UnityEditor;
-using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -188,12 +186,13 @@ namespace CoreLib
         }
 
         // =======================================================================
-        [InitializeOnLoadMethod]
+#if UNITY_EDITOR
+        [UnityEditor.InitializeOnLoadMethod]
         private static void _editorFunc()
         {
-            EditorApplication.playModeStateChanged += state =>
+            UnityEditor.EditorApplication.playModeStateChanged += state =>
             {
-                if (state != PlayModeStateChange.ExitingEditMode)
+                if (state != UnityEditor.PlayModeStateChange.ExitingEditMode)
                     return;
                 
                 var core = FindObjectOfType<Core>();
@@ -201,9 +200,10 @@ namespace CoreLib
                     return;
                 
                 if (core.m_SaveScenes)
-                    EditorSceneManager.SaveOpenScenes();
+                    UnityEditor.SceneManagement.EditorSceneManager.SaveOpenScenes();
             };
         }
+#endif
         
         private void Awake()
         {

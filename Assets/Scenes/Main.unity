@@ -734,54 +734,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 0
---- !u!28 &378545954
-Texture2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 2
-  m_Width: 64
-  m_Height: 1
-  m_CompleteImageSize: 256
-  m_MipsStripped: 0
-  m_TextureFormat: 4
-  m_MipCount: 1
-  m_IsReadable: 1
-  m_IsPreProcessed: 0
-  m_IgnoreMipmapLimit: 0
-  m_MipmapLimitGroupName: 
-  m_StreamingMipmaps: 0
-  m_StreamingMipmapsPriority: 0
-  m_VTOnly: 0
-  m_AlphaIsTransparency: 0
-  m_ImageCount: 1
-  m_TextureDimension: 2
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 0
-    m_WrapV: 0
-    m_WrapW: 0
-  m_LightmapFormat: 0
-  m_ColorSpace: 1
-  m_PlatformBlob: 
-  image data: 256
-  _typelessdata: 000000ff170000ff2e0000ff450000ff5c0000ff730000ff8a0000ffa10000ffb70000ffce0000ffe50000fffc0000ffff0404ffff0909ffff0e0effff1313ffff1818ffff1d1dffff2222ffff2727ffff2c2cffff3131ffff3535ffff3a3affff3f3fffff4444ffff4949ffff4e4effff5353ffff5858ffff5d5dffff6262ffff6767ffff6c6cffff7070ffff7575ffff7a7affff7f7fffff8484ffff8989ffff8e8effff9393ffff9898ffff9d9dffffa2a2ffffa7a7ffffababffffb0b0ffffb5b5ffffbabaffffbfbfffffc4c4ffffc9c9ffffceceffffd3d3ffffd8d8ffffddddffffe2e2ffffe6e6ffffebebfffff0f0fffff5f5fffffafaffffffffff
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &395288727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,6 +979,7 @@ Transform:
   - {fileID: 1918063529}
   - {fileID: 1620886742}
   - {fileID: 1506809931}
+  - {fileID: 730717382}
   - {fileID: 929327501}
   - {fileID: 687136217}
   m_Father: {fileID: 0}
@@ -1595,7 +1548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 531520049}
   - component: {fileID: 531520051}
-  - component: {fileID: 531520050}
+  - component: {fileID: 531520054}
   - component: {fileID: 531520052}
   m_Layer: 3
   m_Name: KillTrigger
@@ -1619,66 +1572,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1961288744}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &531520050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531520048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e9f2bcec9c641eb8243a62e897645b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Filter:
-    _enabled: 0
-    _value: {fileID: 0}
-  m_GoVal:
-    _enabled: 0
-    _value: {fileID: 0}
-  m_OnEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 133208123}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 0
-      - m_Target: {fileID: 531520052}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  m_OnExit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 531520052}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!58 &531520051
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1764,6 +1657,34 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &531520054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531520048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4210c8ed924bc8b62c3db87e24201b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _invert: 0
+  _hasContent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 531520052}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1001 &576156082
 PrefabInstance:
@@ -1871,6 +1792,102 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5400527172144053850, guid: e43580de40eb1754781c727f614698a1, type: 3}
   m_PrefabInstance: {fileID: 576156082}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &583938279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 583938280}
+  - component: {fileID: 583938283}
+  - component: {fileID: 583938282}
+  m_Layer: 3
+  m_Name: ForceJumpTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &583938280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583938279}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.84974, y: 0.84974, z: 0.84974}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1961288744}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &583938282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583938279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4210c8ed924bc8b62c3db87e24201b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _invert: 0
+  _hasContent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1961288747}
+        m_TargetAssemblyTypeName: TarodevController.PlayerController, Assembly-CSharp
+        m_MethodName: set_CanJumpAny
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!58 &583938283
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583938279}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.33
 --- !u!1 &687136216
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,6 +2050,53 @@ Transform:
   - {fileID: 957984458}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &730717381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 730717382}
+  - component: {fileID: 730717383}
+  m_Layer: 0
+  m_Name: "Clock Trigger (\u0430\u043A\u0442\u0438\u0432\u0430\u0446\u0438\u044F
+    \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C \u043F\u0440\u0438 \u0432\u0437\u044F\u0442\u0438\u0438
+    \u0447\u0430\u0441\u043E\u0432)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &730717382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730717381}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 405916765}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &730717383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730717381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77bf7fd8d2f1a6547b8e47d1ae70ff06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_State: {fileID: 11400000, guid: 219ef0f0968ea8f4784bb1cdfaf0f607, type: 2}
 --- !u!1 &748751694
 GameObject:
   m_ObjectHideFlags: 0
@@ -3169,8 +3233,8 @@ MonoBehaviour:
   _gradient:
     serializedVersion: 2
     key0: {r: 0, g: 0, b: 0, a: 1}
-    key1: {r: 1, g: 0, b: 0, a: 1}
-    key2: {r: 1, g: 1, b: 1, a: 0}
+    key1: {r: 0.34524497, g: 0.1541919, b: 0.5943396, a: 1}
+    key2: {r: 1, g: 0.9385363, b: 0.7971698, a: 0}
     key3: {r: 1, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
@@ -3196,7 +3260,7 @@ MonoBehaviour:
     m_ColorSpace: 0
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
-  _tex: {fileID: 378545954}
+  _tex: {fileID: 2059489175}
 --- !u!114 &929327503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3271,10 +3335,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dc224a9d854dd141bab4dd17abab972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showHeader: 1
-  _view: 0
-  _text: 
-  _wasCreated: 1
 --- !u!1 &966600840
 GameObject:
   m_ObjectHideFlags: 0
@@ -4944,7 +5004,8 @@ GameObject:
   - component: {fileID: 1506809931}
   - component: {fileID: 1506809932}
   m_Layer: 0
-  m_Name: TimeInitial
+  m_Name: "TimeInitial (\u0438\u0437\u043D\u0430\u0447\u0430\u043B\u044C\u043D\u043E\u0435
+    \u0432\u0440\u0435\u043C\u044F)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5457,7 +5518,8 @@ GameObject:
   - component: {fileID: 1620886742}
   - component: {fileID: 1620886743}
   m_Layer: 0
-  m_Name: Platforms Cooldown
+  m_Name: "Platforms Cooldown (\u043C\u043D\u043E\u0434\u0438\u0442\u0435\u043B\u044C
+    \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438 \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5903,14 +5965,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dc224a9d854dd141bab4dd17abab972, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showHeader: 1
-  _view: 0
-  _text: "* \u043E\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442
-    \u0438\u0433\u0440\u0443 \u0438 \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442
-    \u0444\u0438\u043D\u0430\u043B\u044C\u043D\u044B\u0439 \u044D\u043A\u0440\u0430\u043D 
-    \u0435\u0441\u043B\u0438 \u0432\u044B\u0437\u044B\u0432\u0430\u0435\u0442\u0441\u044F
-    Loose event"
-  _wasCreated: 1
 --- !u!1 &1828549899
 GameObject:
   m_ObjectHideFlags: 0
@@ -6122,7 +6176,7 @@ GameObject:
   - component: {fileID: 1865338182}
   - component: {fileID: 1865338183}
   m_Layer: 0
-  m_Name: Platforms Speed
+  m_Name: "Platforms Speed (\u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6301,7 +6355,8 @@ GameObject:
   - component: {fileID: 1918063529}
   - component: {fileID: 1918063530}
   m_Layer: 0
-  m_Name: Sec Pre Clocks
+  m_Name: "Sec Pre Clocks (\u0441\u0435\u043A\u0443\u043D\u0434 \u0437\u0430 \u043A\u0430\u0436\u0434\u044B\u0435
+    \u0447\u0430\u0441\u044B)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6926,6 +6981,14 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Input
       m_Flags: 0
+    - m_Name: 
+      m_Id: df996b75-044e-4798-9412-49884039000b
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Input
+      m_Flags: 0
     m_Flags: 0
 --- !u!114 &1953912895
 MonoBehaviour:
@@ -7140,7 +7203,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.54, y: 0.48}
+  m_Size: {x: 0.5, y: 0.48}
   m_EdgeRadius: 0
 --- !u!4 &1961288744
 Transform:
@@ -7159,6 +7222,7 @@ Transform:
   - {fileID: 691957090}
   - {fileID: 1192551786}
   - {fileID: 531520049}
+  - {fileID: 583938280}
   - {fileID: 2074377733}
   - {fileID: 1535471969}
   - {fileID: 1075405529}
@@ -7180,7 +7244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterBounds:
     m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.27, y: 0.2, z: 0}
+    m_Extent: {x: 0.2, y: 0.2, z: 0}
   _groundLayer:
     serializedVersion: 2
     m_Bits: 512
@@ -7189,7 +7253,7 @@ MonoBehaviour:
   _rayBuffer: 0.1
   _acceleration: 40
   _moveClamp: 7
-  _deAcceleration: 70
+  _deAcceleration: 100
   _apexBonus: 2
   _fallClamp: -50
   _minFallSpeed: 20
@@ -7202,6 +7266,7 @@ MonoBehaviour:
   _dashSpeed: 30
   _dashDuration: 0.12
   _dashBounce: 6
+  _dashCooldown: 0
   _velocity: {x: 0, y: 0}
   _damping: 10
   _freeColliderIterations: 10
@@ -7247,6 +7312,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ecbaf42ee814b269534bc3d906eceb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!28 &2059489175
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 2
+  m_Width: 64
+  m_Height: 1
+  m_CompleteImageSize: 256
+  m_MipsStripped: 0
+  m_TextureFormat: 4
+  m_MipCount: 1
+  m_IsReadable: 1
+  m_IsPreProcessed: 0
+  m_IgnoreMipmapLimit: 0
+  m_MipmapLimitGroupName: 
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_VTOnly: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 0
+    m_WrapV: 0
+    m_WrapW: 0
+  m_LightmapFormat: 0
+  m_ColorSpace: 1
+  m_PlatformBlob: 
+  image data: 256
+  _typelessdata: 000000ff050208ff0a0410ff0e0619ff130821ff180b29ff1d0d31ff210f39ff261141ff2b134aff301552ff34175aff391962ff3e1c6aff431e73ff47207bff4c2283ff51248bff562693ff5a2998ff5e2e99ff61329aff65379cff693b9dff6d409eff70449fff7449a0ff784da1ff7c52a3ff7f56a4ff835ba5ff875fa6ff8b64a7ff8e68a8ff926daaff9671abff9a76acff9d7aadffa17faeffa583afffa988b1ffac8cb2ffb091b3ffb495b4ffb89ab5ffbb9eb6ffbfa3b8ffc3a7b9ffc7acbaffcab0bbffceb5bcffd2b9bdffd6bebeffd9c2c0ffddc7c1ffe1cbc2ffe5d0c3ffe8d4c4ffecd9c5fff0ddc7fff4e2c8fff7e6c9fffbebcaffffefcbff
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &2074377732
 GameObject:
   m_ObjectHideFlags: 0

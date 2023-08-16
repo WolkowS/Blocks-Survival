@@ -45,6 +45,9 @@ namespace Game
         {
             [NonSerialized]
             public Vector2 _direction;
+            [Label("Speed")]
+            public ParticleSystem.MinMaxCurve _speedRoll;
+            [NonSerialized]
             public float   _speed;
             [CurveRange]
             public AnimationCurve _acceleration;
@@ -58,6 +61,12 @@ namespace Game
                 _direction = Vector2.zero;;
             }
 
+            public void Run(Vector2 dir)
+            {
+                _direction = dir;
+                _speed = _speedRoll.Evaluate();
+            }
+            
             public Vector2 Tick(float delta)
             {
                 var offset = _direction * _speed * delta * _acceleration.Evaluate(_time) * GamePrefs.Instance._platformSpeedMul.Value;
@@ -159,7 +168,7 @@ namespace Game
             };
             
             _moveDir.transform.localPosition = _moveVector.To3DXY() * _directionOffset;
-            _motor._direction = _moveVector;
+            _motor.Run(_moveVector);
             
             _waitChoose = false;
             if (_moveVector == Vector2.zero)

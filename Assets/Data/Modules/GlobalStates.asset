@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ShowStates: 0
   m_Runtime:
+  - {fileID: 11400000, guid: 219ef0f0968ea8f4784bb1cdfaf0f607, type: 2}
   - {fileID: 11400000, guid: 3f050672eae99694fbe9d09e66bbfebd, type: 2}
   m_AutoCollect: 1

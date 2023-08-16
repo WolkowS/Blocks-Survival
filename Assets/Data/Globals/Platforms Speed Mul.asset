@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6711a7e9db9f33044ad314575ac66506, type: 3}
   m_Name: Platforms Speed Mul
   m_EditorClassIdentifier: 
-  m_Value: 3
-  m_InitialValue: 1
+  m_Value: 1
+  m_InitialValue: 2
   m_Note: "\u041C\u043D\u043E\u0436\u0438\u0442\u0435\u043B\u044C \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438
     \u0443 \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C"
