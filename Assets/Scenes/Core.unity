@@ -285,7 +285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380397941}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2144,7 +2144,7 @@ MonoBehaviour:
   m_DoNotDestroyOnLoad: 1
   m_LoadingPriority: 0
   m_MainScenes: 0
-  m_ObjectStates: 1
+  m_ObjectStates: 0
   m_SaveScenes: 0
   m_Fps:
     _enabled: 0
@@ -2156,16 +2156,12 @@ MonoBehaviour:
     _enabled: 0
     _value: {fileID: 0}
   _runtimeLogs:
-    _enabled: 1
+    _enabled: 0
     _value: 0
   m_Modules:
     array:
     - m_Active: 1
       m_Module: {fileID: 110720843}
-    - m_Active: 1
-      m_Module: {fileID: 11400000, guid: 07b3b5108dc11164b8bd4b5946cae0cc, type: 2}
-    - m_Active: 1
-      m_Module: {fileID: 11400000, guid: 02370f034b94ea64db95992ed54a1af4, type: 2}
     - m_Active: 1
       m_Module: {fileID: 11400000, guid: acb7b01813a53244db015c9131d302e1, type: 2}
     - m_Active: 1
@@ -2173,7 +2169,7 @@ MonoBehaviour:
     - m_Active: 1
       m_Module: {fileID: 11400000, guid: 9ed8e4f4c57c779429efc34cb8cc4a6a, type: 2}
     - m_Active: 1
-      m_Module: {fileID: 11400000, guid: c41881a6e2fe5a44bb16482ebe5b6e07, type: 2}
+      m_Module: {fileID: 11400000, guid: 07b3b5108dc11164b8bd4b5946cae0cc, type: 2}
     - m_Active: 1
       m_Module: {fileID: 11400000, guid: 2d52286af892a1648bbb20539ec64ec5, type: 2}
     - m_Active: 1
@@ -2207,5 +2203,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2006388498}
-  - {fileID: 409178912}
   - {fileID: 380397942}
+  - {fileID: 409178912}

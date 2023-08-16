@@ -3,12 +3,12 @@ using UnityEngine.Events;
 
 namespace Game
 {
-    public class IsRuntime : MonoBehaviour
+    public class BuildOnly : MonoBehaviour
     {
         public UnityEvent _onInvoke;
         
         // =======================================================================
-        public void Invoke()
+        public void OnEnable()
         {
             if (Application.isEditor == false)
                 _onInvoke.Invoke();
